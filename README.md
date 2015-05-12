@@ -1,4 +1,27 @@
 ##Front-end development test (hCard builder)
+
+###Description
+Technical test 2nd Stage
+submited 7th April 2015
+
+Tech stack used:
+
+- Grunt
+- Sass
+- compass
+- uglify
+
+index.html uses production version (with maps) of files in 
+
+	/css/site.css
+	/js/scripts.min.js
+
+master files are in
+
+	/sass
+	/scripts
+
+###Candidate Exercise
 Using HTML, CSS and Javascript code up the hCard builder to the specified design. The preview pane should automatically update to show the content entered in the form. You do not need to build the submit page for the form itself or integrate any back-end technologies.
 
 If you are pushed for time please focus on the HTML and CSS. The test should take approximately 3 hours.
