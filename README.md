@@ -11,12 +11,12 @@ Tech stack used:
 - compass
 - uglify
 
-index.html uses production version (with maps) of files in 
+index.html uses production minified and compressed version of files (with maps) in 
 
 	/css/site.css
 	/js/scripts.min.js
 
-master files are in
+original master files are in
 
 	/sass
 	/scripts
