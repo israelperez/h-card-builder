@@ -1,0 +1,177 @@
+//-------------------------------------------------
+//					Variables
+//-------------------------------------------------
+$bg-main:#f4f4f4;
+$content:#ffffff;
+
+$text-light:#ffffff;
+$text-mid-soft:#ecf0f1;
+$text-mid:#646464; //normal text
+$text-dark:#373737;
+$text-tagline:#4ca5d0;
+
+$flat-alizarin:#e74c3c;
+$flat-carrot:#e67e22;
+$flat-sun:#f1c40f;
+$flat-emerald:#2ecc71;
+$flat-torquoise:#1abc9c;
+$flat-river:#3498db;
+$flat-amethyst:#9b59b6;
+
+$flat-pomegranate:#c0392b; //dark alizarin
+$flat-pumpkin:#d35400; //dark carrot
+$flat-orange:#f39c12; //dark sun
+$flat-nephritis:#27ae60; //dark emerald
+$flat-greensea:#16a085; //dark turquoise
+$flat-belize:#2980b9; //dark rivver
+$flat-wisteria:#8e44ad; //dark amethyst
+
+$flat-asphalt:#34495e;
+$flat-midnight:#2c3e50; //dark asphalt
+$flat-clouds:#ecf0f1;
+$flat-silver:#bdc3c7; //dark clouds
+$flat-concrete:#95a5a6;
+$flat-asbestos:#7f8c8d; //dark concrete
+
+/****************************************************
+*													*
+*					hCard Builder					*
+*						by Israel					*
+*													*
+****************************************************/
+
+/*-------------------------------------------------
+					General
+-------------------------------------------------*/
+
+html{
+	height:100%;
+}
+body{
+	height: 100%;
+	color: $flat-asbestos;
+	font: 10px/14px 'Open Sans',Tahoma,sans-serif;
+	font-weight: 300;
+	overflow-x: hidden;
+}
+a{
+	cursor: pointer;
+	text-decoration: none;
+	&:hover{
+		text-decoration: none;
+		color: inherit; 
+	}
+}
+*:focus{
+	outline: none;
+}
+.input-text{
+	color: initial;
+	font-family: serif;
+	font-size: 18px;
+}
+
+/*-------------------------------------------------
+					Form
+-------------------------------------------------*/
+form{
+	padding: 0 15px;
+	padding-bottom:30px;
+}
+h1{
+	font-size: 27px;
+	font-weight: bold;
+	line-height: 24px;
+	text-align: left;
+	color: $flat-asphalt;
+}
+h2{
+	font-size: 11px;
+	font-weight: normal;
+	line-height: 20px;
+	text-transform: uppercase;
+	color: $flat-silver;
+	border-bottom: 1px solid $flat-silver;
+	margin-bottom: 30px;
+	height: 60px;
+}
+.form-group {
+	label{
+		text-transform: uppercase;
+		font-weight: normal;
+		font-size: 13px;
+	}
+	input{
+		@extend .input-text;
+	}
+}
+button[type=submit]{
+	padding-left: 30px;
+	padding-right: 30px;
+	letter-spacing: 1px;
+}
+
+/*-------------------------------------------------
+					Preview
+-------------------------------------------------*/
+.preview{
+	background-color: $flat-clouds;
+	#card{
+		padding: 15px;
+		padding-bottom: 50px;
+		h1{
+			text-transform: uppercase;
+			font-size: 16px;
+			font-weight: normal;
+			text-align: right;
+			color: $flat-silver;
+		}
+		h2{
+			font-size: 25px;
+			text-transform: capitalize;
+			border: none;
+			background-color: $flat-asphalt;
+			padding: 20px;
+			color: $text-light;
+			margin: 0;
+		}
+		#data{
+			background: $text-light;
+			padding: 30px;
+			color: $flat-asphalt;
+			border-bottom: 2px solid $flat-concrete;
+			p{
+				border-bottom: 1px solid $flat-silver;
+				&.pull-left, &.pull-right{
+					width: 50%;
+				}
+			}
+			label{
+				width: 60px;
+				text-transform: uppercase;
+				font-weight: normal;
+			}
+			span{
+				@extend .input-text;
+			}
+		}
+	}
+}
+@media screen and ( min-width: 768px){
+	.container{
+		height: 100%;
+		.row:first-child{
+			height: 100%;
+		}
+		.preview{
+			height: 100%;
+		}
+	}
+	form{
+		padding-bottom: 0;
+	}
+	.preview #card{
+		padding-top: 50%;
+		margin-top: -100px;
+	}
+}
